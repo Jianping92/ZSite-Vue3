@@ -3,6 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import { create, NButton } from "naive-ui";
+import { createTheme, getSystemLocalTheme } from "@/hooks/theme-change";
 
 // css style reset
 import "./assets/style/reset.css";
@@ -15,5 +16,16 @@ import "vfonts/FiraCode.css";
 const naive = create({
   components: [NButton]
 });
-
-createApp(App).use(store).use(router).use(naive).mount("#app");
+// 声明 app
+let app = createApp(App);
+// 设置 theme
+const currentTheme = getSystemLocalTheme();
+const theme = createTheme(currentTheme);
+theme.checkSystemTheme();
+// 加载
+app.use(store);
+app.use(router);
+app.use(theme);
+app.use(naive);
+// 挂载
+app.mount("#app");

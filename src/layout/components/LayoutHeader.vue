@@ -1,15 +1,26 @@
 <template>
-  <header class="layout-header">LayoutHeader</header>
+  <header class="layout-header">
+    LayoutHeader
+    <button @click="toggleTheme">切换底色</button>
+  </header>
 </template>
 
 <script>
 import { onMounted } from "vue";
+import { dataComputed } from "@/hooks/data-computed";
 
 export default {
   name: "LayoutHeader",
   components: {},
   setup() {
+    const { theme } = dataComputed();
     onMounted(() => {});
+    const toggleTheme = () => {
+      theme.toggleTheme();
+    };
+    return {
+      toggleTheme
+    };
   }
 };
 </script>
