@@ -1,5 +1,12 @@
 <template>
-  <footer class="layout-footer">LayoutFooter</footer>
+  <footer class="layout-footer">
+    <div class="footer-item">由 Vue3/Express 提供技术支持</div>
+    <!--<div class="footer-item">
+      <a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">
+        京ICP备xxxxxxxx号
+      </a>
+    </div>-->
+  </footer>
 </template>
 
 <script>
@@ -20,8 +27,19 @@ export default {
 .layout-footer {
   position: relative;
   width: 100%;
-  height: 50px;
-  margin: 0 auto;
+  height: $body-footer-height;
+  //margin: 0 auto;
   background: $module-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .footer-item {
+    color: $primary-color;
+    &:first-child {
+      cursor: default;
+      user-select: none;
+    }
+  }
 }
 </style>
