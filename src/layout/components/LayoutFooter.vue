@@ -15,10 +15,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~@/assets/style/variables.scss";
+
 .layout-footer {
   position: relative;
-  width: 1280px;
+  width: 100%;
   height: 50px;
   margin: 0 auto;
+  background: $module-bg;
 }
 </style>

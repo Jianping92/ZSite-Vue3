@@ -36,18 +36,16 @@ export default {
 @import "~@/assets/style/variables.scss";
 
 .layout {
+  position: relative;
+  width: 100%;
+  background: $body-bg;
+  padding-top: $body-header-height;
+
   &.dark {
     @include darkTheme();
   }
   &.light {
     @include lightTheme();
   }
-
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  overflow-y: auto;
-  background: $body-bg;
 }
 </style>

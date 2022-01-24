@@ -25,10 +25,9 @@ const changeTheme = (defaultTheme) => {
 
   // 设置 theme
   const setTheme = (newTheme) => {
-    console.log(newTheme);
     if (themes.includes(newTheme) && newTheme !== theme.value) {
       theme.value = newTheme;
-      storageSet("THEME_KEY", newTheme);
+      storageSet(THEME_KEY, newTheme);
     }
   };
 

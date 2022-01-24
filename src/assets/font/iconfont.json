@@ -1,0 +1,23 @@
+{
+  "id": "3151560",
+  "name": "zsite",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4053171",
+      "name": "moon-full-moon",
+      "font_class": "dark",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "4053209",
+      "name": "sun",
+      "font_class": "light",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    }
+  ]
+}

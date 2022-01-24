@@ -4,7 +4,8 @@
     $theme-white: #fff,
     $theme-black: #000,
     $theme-primary: #409efe,
-    $theme-body-bg: #e3e3e3
+    $theme-body-bg: #e3e3e3,
+    $theme-color: #e6a23c
   )
 }
 
@@ -14,7 +15,8 @@
     $theme-white: #444,
     $theme-black: #fff,
     $theme-primary: #ffffff,
-    $theme-body-bg: #000
+    $theme-body-bg: #000,
+    $theme-color: #ffffff
   )
 }
 
@@ -23,7 +25,8 @@
   $theme-white,
   $theme-black,
   $theme-primary,
-  $theme-body-bg
+  $theme-body-bg,
+  $theme-color
 ) {
   #{--body-bg}: $theme-body-bg;
   #{--theme-black}: $theme-black;
@@ -34,6 +37,8 @@
 
   $module-bg: rgba($theme-white, 0.6);
   $module-bg-opaque: rgba($theme-white, 1);
+  #{--module-bg}: $module-bg;
+  #{--module-bg-opaque}: $module-bg-opaque;
 
   #{--text-reversal}: rgba($theme-white, 0.9);
 
@@ -43,4 +48,6 @@
   #{--text-secondary}: rgba($theme-text, 0.5);
   #{--text-disabled}: rgba($theme-text, 0.38);
   #{--text-divider}: rgba($theme-text, 0.26);
+
+  #{--theme-color}: $theme-color;
 }

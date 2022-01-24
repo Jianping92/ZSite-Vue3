@@ -15,11 +15,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~@/assets/style/variables.scss";
+
 .layout-main {
   position: relative;
-  width: 1280px;
-  height: auto;
-  min-height: 89vh;
+  width: $body-width;
+  height: 1500px;
+  //min-height: 89vh;
   margin: 0 auto;
 }
 </style>
