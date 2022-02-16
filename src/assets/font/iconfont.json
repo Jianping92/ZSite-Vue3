@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1199116",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "4936533",
+      "name": "code library-fill",
+      "font_class": "code",
+      "unicode": "e84b",
+      "unicode_decimal": 59467
+    },
+    {
       "icon_id": "4053171",
       "name": "moon-full-moon",
       "font_class": "dark",

@@ -1,6 +1,6 @@
 <template>
   <div class="app-default">
-    <router-view />
+    <Layout />
   </div>
 </template>
 
@@ -26,3 +26,9 @@
   background: $body-bg;
 }
 </style>
+<script>
+import Layout from "@/layout/Layout";
+export default {
+  components: { Layout }
+};
+</script>

@@ -1,8 +1,8 @@
 @mixin lightTheme() {
   @include css-var(
     $theme-text: rgba(0,0,0,0.7),
-    $theme-white: #fff,
-    $theme-black: #000,
+    $theme-white: #ffffff,
+    $theme-black: #000000,
     $theme-primary: #409efe,
     $theme-body-bg: #e3e3e3,
     $theme-color: #e6a23c
@@ -12,8 +12,8 @@
 @mixin darkTheme() {
   @include css-var(
     $theme-text: #f0f0f0,
-    $theme-white: #444,
-    $theme-black: #fff,
+    $theme-white: #444444,
+    $theme-black: #ffffff,
     $theme-primary: #ffffff,
     $theme-body-bg: #000,
     $theme-color: #ffffff

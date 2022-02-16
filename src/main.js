@@ -14,6 +14,7 @@ import "vfonts/Lato.css";
 import "vfonts/FiraCode.css";
 
 import "./assets/font/iconfont";
+import "./permissions";
 
 const naive = create({
   components: [NButton]
