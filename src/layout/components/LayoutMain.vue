@@ -6,18 +6,22 @@
     <div class="layout-main-content">
       <router-view />
     </div>
-    <div class="layout-main-nav">3</div>
+    <div class="layout-main-nav">
+      <Statistics />
+    </div>
   </main>
 </template>
 
 <script>
 import VerticalNavigation from "@/components/VerticalNavigation/VerticalNavigation";
+import Statistics from "@/components/Statistics/Statistics";
 import { onMounted } from "vue";
 
 export default {
   name: "LayoutMain",
   components: {
-    VerticalNavigation
+    VerticalNavigation,
+    Statistics
   },
   setup() {
     onMounted(() => {});
